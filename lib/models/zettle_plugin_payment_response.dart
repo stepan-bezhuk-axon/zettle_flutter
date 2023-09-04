@@ -73,8 +73,8 @@ class ZettlePluginPaymentResponse {
   late String? panHash;
   late String? applicationName;
   late String? authorizationCode;
-  late String? installmentAmount;
-  late String? nrOfInstallments;
+  late dynamic installmentAmount;
+  late dynamic nrOfInstallments;
   late String? mxFiid;
   late String? mxCardType;
   late String? reference;
