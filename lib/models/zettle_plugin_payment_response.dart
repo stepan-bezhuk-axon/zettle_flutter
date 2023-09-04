@@ -60,7 +60,7 @@ class ZettlePluginPaymentResponse {
   }
 
   late ZettlePluginPaymentStatus status;
-  late double? amount;
+  late num? amount;
   late double? gratuityAmount;
   late String? cardType;
   late String? cardPaymentEntryMode;
