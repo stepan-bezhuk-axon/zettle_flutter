@@ -1,3 +1,5 @@
+import 'dart:io';
+
 enum ZettlePluginPaymentStatus { completed, canceled, failed }
 
 /// Payment response object.
@@ -99,6 +101,7 @@ class ZettlePluginPaymentResponse {
         '"nrOfInstallments": "$nrOfInstallments",\n' +
         '"mxFiid": "$mxFiid",\n' +
         '"mxCardType": "$mxCardType",\n' +
-        '"reference": "$reference"}';
+        '"reference": "$reference",\n' +
+        '"isIos": ${Platform.isIOS} }';
   }
 }
