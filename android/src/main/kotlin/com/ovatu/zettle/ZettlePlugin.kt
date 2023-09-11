@@ -288,8 +288,6 @@ class ZettlePlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
           when (val paymentResult: CardPaymentResult? =
                   data.getParcelableExtra(CardPaymentActivity.RESULT_EXTRA_PAYLOAD)) {
             is CardPaymentResult.Completed -> {
-              println(paymentResult.payload.reference)
-
               currentOp.response.status = true
               currentOp.response.message = mutableMapOf(
                       "status" to "completed",
