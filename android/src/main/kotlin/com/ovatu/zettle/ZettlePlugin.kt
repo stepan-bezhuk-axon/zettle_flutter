@@ -216,7 +216,7 @@ class ZettlePlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
     val reference = TransactionReference.Builder(internalUniqueTraceId).build()
 
     val intent = CardPaymentActivity.IntentBuilder(activity)
-            .amount((((args["amount"] as Double) * 100).toInt()).toLong())
+            .amount(args["amount"] as Double)
             .reference(reference)
             .enableLogin(args["enableLogin"] as Boolean? ?: true)
             .enableTipping(args["enableTipping"] as Boolean? ?: true)
