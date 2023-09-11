@@ -81,24 +81,24 @@ class ZettlePluginPaymentResponse {
 
   @override
   String toString() {
-    return 'status: $status\n' +
-        'amount: $amount\n' +
-        'gratuityAmount: $gratuityAmount\n' +
-        'cardType: $cardType\n' +
-        'cardPaymentEntryMode: $cardPaymentEntryMode\n' +
-        'cardholderVerificationMethod: $cardholderVerificationMethod\n' +
-        'tsi: $tsi\n' +
-        'tvr: $tvr\n' +
-        'applicationIdentifier: $applicationIdentifier\n' +
-        'cardIssuingBank: $cardIssuingBank\n' +
-        'maskedPan: $maskedPan\n' +
-        'panHash: $panHash\n' +
-        'applicationName: $applicationName\n' +
-        'authorizationCode: $authorizationCode\n' +
-        'installmentAmount: $installmentAmount\n' +
-        'nrOfInstallments: $nrOfInstallments\n' +
-        'mxFiid: $mxFiid\n' +
-        'mxCardType: $mxCardType\n' +
-        'reference: $reference';
+    return '{"status": "$status",\n' +
+        '"amount": "$amount",\n' +
+        '"gratuityAmount": "$gratuityAmount",\n' +
+        '"cardType": "$cardType",\n' +
+        '"cardPaymentEntryMode": "$cardPaymentEntryMode",\n' +
+        '"cardholderVerificationMethod": "$cardholderVerificationMethod",\n' +
+        '"tsi": "$tsi",\n' +
+        '"tvr": "$tvr",\n' +
+        '"applicationIdentifier": "$applicationIdentifier",\n' +
+        '"cardIssuingBank": "$cardIssuingBank",\n' +
+        '"maskedPan": "$maskedPan",\n' +
+        '"panHash": "$panHash",\n' +
+        '"applicationName": "$applicationName",\n' +
+        '"authorizationCode": "$authorizationCode",\n' +
+        '"installmentAmount": "$installmentAmount",\n' +
+        '"nrOfInstallments": "$nrOfInstallments",\n' +
+        '"mxFiid": "$mxFiid",\n' +
+        '"mxCardType": "$mxCardType",\n' +
+        '"reference": "$reference"}';
   }
 }
