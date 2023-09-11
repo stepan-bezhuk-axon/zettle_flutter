@@ -83,8 +83,10 @@ class ZettlePluginPaymentResponse {
 
   @override
   String toString() {
+    final amountResponse = Platform.isIOS ? amount : ((amount ?? 1) / 100);
+
     return '{"status": "$status",\n' +
-        '"amount": "$amount",\n' +
+        '"amount": "$amountResponse",\n' +
         '"gratuityAmount": "$gratuityAmount",\n' +
         '"cardType": "$cardType",\n' +
         '"cardPaymentEntryMode": "$cardPaymentEntryMode",\n' +
@@ -101,7 +103,6 @@ class ZettlePluginPaymentResponse {
         '"nrOfInstallments": "$nrOfInstallments",\n' +
         '"mxFiid": "$mxFiid",\n' +
         '"mxCardType": "$mxCardType",\n' +
-        '"reference": "$reference",\n' +
-        '"isIos": ${Platform.isIOS} }';
+        '"reference": "$reference" }\n';
   }
 }
