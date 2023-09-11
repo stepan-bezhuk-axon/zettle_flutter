@@ -86,7 +86,7 @@ class ZettlePluginPaymentResponse {
     final amountResponse = Platform.isIOS ? amount : ((amount ?? 1) / 100);
 
     return '{"status": "$status",\n' +
-        '"amount": "$amountResponse",\n' +
+        '"amount": "${amountResponse}0",\n' +
         '"gratuityAmount": "$gratuityAmount",\n' +
         '"cardType": "$cardType",\n' +
         '"cardPaymentEntryMode": "$cardPaymentEntryMode",\n' +
