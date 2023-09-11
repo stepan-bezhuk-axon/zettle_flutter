@@ -309,7 +309,7 @@ class ZettlePlugin: FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegis
                       "mxFiid" to paymentResult.payload.mxFiid,
                       "mxCardType" to paymentResult.payload.mxCardType,
                       "panHash" to paymentResult.payload.panHash,
-                      "reference" to paymentResult.payload.referenceNumber,
+                      "reference" to paymentResult.payload.reference?.id,
               )
             }
             is CardPaymentResult.Canceled -> {
